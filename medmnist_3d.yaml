@@ -1,0 +1,59 @@
+OrganMNIST3D:
+  flag: organmnist3d
+  task_type: multi-class classification
+  diseases:
+    - liver
+    - kidney-right
+    - kidney-left
+    - femur-right
+    - femur-left
+    - bladder
+    - heart
+    - lung-right
+    - lung-left
+    - spleen
+    - pancreas
+  metric: ACC
+  sota: 0.997
+
+NoduleMNIST3D:
+  flag: nodulemnist3d
+  task_type: binary classification
+  diseases:
+    - nodule
+  metric: AUC
+  sota: 0.863
+
+AdrenalMNIST3D:
+  flag: adrenalmnist3d
+  task_type: binary classification
+  diseases:
+    - hyperplasia
+  metric: AUC
+  sota: 0.874
+
+FractureMNIST3D:
+  flag: fracturemnist3d
+  task_type: multi-class classification
+  diseases:
+    - buckle
+    - nondisplaced
+    - displaced
+  metric: ACC
+  sota: 0.714
+
+VesselMNIST3D:
+  flag: vesselmnist3d
+  task_type: binary classification
+  diseases:
+    - aneurysm
+  metric: AUC
+  sota: 0.914
+
+SynapseMNIST3D:
+  flag: synapsemnist3d
+  task_type: binary classification
+  diseases:
+    - excitatory
+  metric: AUC
+  sota: 0.843
